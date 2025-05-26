@@ -92,7 +92,7 @@ Tidak ditemukan data yang hilang dan data duplikat.
 Visualisasi berikut menunjukkan korelasi antara nilai matematika, membaca, dan menulis yaitu korelasi tertinggi terjadi antara reading score dan writing score (0.95), menunjukkan bahwa siswa dengan kemampuan membaca tinggi cenderung juga unggul dalam menulis.   
 
 Berikut adalah visualisasi korelasi antar skor menggunakan heatmap:
-![Grafik Heatmap Korelasi Antar Skor](images/output%201.png "Heatmap Korelasi Antar Skor")
+![output 1](https://github.com/user-attachments/assets/89ae636b-49b1-4897-bcad-67e568a033fa)
 
 5. Distribusi Variabel Kategorikal   
 Distribusi data pada beberapa fitur penting:
@@ -103,11 +103,15 @@ Distribusi data pada beberapa fitur penting:
 * Test Preparation Course: 642 siswa tidak mengikuti kursus, 358 mengikuti kursus.   
 Visualisasi distribusi juga disertakan dengan countplot untuk tiap fitur sebagai berikut:   
 
-![Grafik Distribusi Gender](images/output%202.png "Distribusi Gender")   
-![Grafik Distribusi Race/Ethnicity](images/output%203.png "Distribusi Race/Ethnicity")   
-![Grafik Distribusi Parental Level of Education](images/output%204.png "Distribusi GenderParental Level of Education")   
-![Grafik Distribusi Lunch](images/output%205.png "Distribusi Lunch")   
-![Grafik Distribusi Test Preparation Course](images/output%206.png "Distribusi Test Preparation Course")   
+![output 2](https://github.com/user-attachments/assets/7880311a-bf47-447b-96b4-e23822399539)
+
+![output 3](https://github.com/user-attachments/assets/1a36bc8f-2cca-461e-a689-851d0421ca96)
+
+![output 4](https://github.com/user-attachments/assets/57c411ee-92f9-43de-a7bc-317fc720a8ea)
+
+![output 5](https://github.com/user-attachments/assets/ed99688a-56fc-450b-aa4e-22e922ba8a77)
+
+![output 6](https://github.com/user-attachments/assets/5ee61eb7-c0fa-462e-ab04-7492b45f4e97)
 
 6. Perbandingan Skor berdasarkan Gender   
 Boxplot menunjukkan bahwa terdapat perbedaan distribusi skor antara gender untuk ketiga mata pelajaran, meskipun tidak terlalu signifikan secara visual.
@@ -115,9 +119,9 @@ Boxplot menunjukkan bahwa terdapat perbedaan distribusi skor antara gender untuk
 * Laki-laki sedikit unggul di math.   
 
 Berikut adalah visualisasi dari perbandingan skor berdasarkan gender:   
-![Grafik Distribusi Math Score Antara Gender](images/output%207.png "Distribusi Math Score Antara Gender")   
-![Grafik Distribusi Reading Score Antara Gender](images/output%208.png "Distribusi Reading Score Antara Gender")   
-![Grafik Distribusi Writing Score Antara Gender](images/output%209.png "Distribusi Writing Score Antara Gender")   
+![output 7](https://github.com/user-attachments/assets/cc4a9765-52de-4e2f-9ef9-42827e3373d1)
+![output 8](https://github.com/user-attachments/assets/7ad0d837-d3cc-4297-8f1e-8e00002f3060)
+![output 9](https://github.com/user-attachments/assets/1b0b9abb-b976-48fb-896e-0bdea0437062)
 
 ## Data Preparation
 Tahapan ini bertujuan untuk mempersiapkan data agar siap digunakan dalam pelatihan model machine learning. Beberapa langkah dilakukan secara sistematis untuk memastikan kualitas dan konsistensi data.   
@@ -192,7 +196,7 @@ Kekurangan:
 * Tidak fleksibel jika data mengandung interaksi kompleks antar fitur   
 
 Berikut adalah visualisasi model logistic regression dengan confussion matrix:
-![Grafik Confussion Matrix Model Logistic Regression](images/output%2010.png "Confussion Matrix Model Logistic Regression")
+![output 10](https://github.com/user-attachments/assets/1cefe685-0761-442c-9e50-382316e9271a)
 
 **Model 2: Random Forest Classifier**   
 Random Forest adalah algoritma ensemble yang membangun banyak decision tree secara acak dan menggabungkan hasilnya untuk menghasilkan prediksi akhir. Teknik ini efektif dalam meningkatkan akurasi dan mengurangi risiko overfitting.   
@@ -210,7 +214,7 @@ Kekurangan:
 * Model lebih kompleks dan sulit diinterpretasikan dibandingkan Logistic Regression   
 
 Berikut adalah visualisasi model random forest dengan confussion matrix:
-![Grafik Confussion Matrix Model Random Forest](images/output%2011.png "Confussion Matrix Model Random Forest")   
+![output 11](https://github.com/user-attachments/assets/c8f4851b-c3c6-4520-8ee9-8635d1817653)
 
 **Model 3: Support Vector Machine (SVM)**
 Support Vector Machine bekerja dengan mencari hyperplane terbaik yang memisahkan kelas dalam ruang berdimensi tinggi. Cocok untuk kasus klasifikasi yang kompleks dan data dengan jumlah fitur besar.   
@@ -229,7 +233,7 @@ Kekurangan:
 * Memerlukan tuning terhadap parameter seperti C dan gamma   
 
 Berikut adalah visualisasi model SVM dengan confussion matrix:
-![Grafik Confussion Matrix SVM](images/output%2012.png "Confussion Matrix Model SVM")   
+![output 12](https://github.com/user-attachments/assets/76cf4773-c795-4f6e-aa7d-26049fbb0b1d)
 
 **Model 4: XGBoost Classifier**
 XGBoost (Extreme Gradient Boosting) adalah algoritma boosting berbasis pohon yang sangat populer karena performanya yang tinggi dalam berbagai kompetisi data science. Algoritma ini membangun model secara bertahap dengan fokus pada memperbaiki kesalahan prediksi dari model sebelumnya.   
@@ -255,8 +259,8 @@ Keempat model di atas dilatih dengan pipeline yang sama, yaitu:
 * Prediksi dilakukan terhadap X_test   
 
 Berikut adalah visualisasi model SVM dengan confussion matrix:
-![Grafik Confussion Matrix XGBoost Classifier](images/output%2013.png "Confussion Matrix XGBoost Classifier")   
-
+![output 13](https://github.com/user-attachments/assets/cabe9fb4-8785-437d-a722-7f33b5c6271d)
+ 
 Setiap model memiliki karakteristik yang berbeda. Logistic Regression unggul dalam kesederhanaan dan interpretabilitas, namun kurang efektif untuk data non-linear. Random Forest lebih kompleks tetapi tahan terhadap overfitting. SVM sangat akurat pada kasus tertentu namun memerlukan tuning parameter yang teliti. XGBoost dikenal karena keakuratannya, meskipun pelatihannya lebih kompleks dan memakan waktu lebih lama.   
 
 Berdasarkan hasil evaluasi performa, Logistic Regression menunjukkan akurasi dan stabilitas metrik yang paling tinggi dibandingkan model lainnya, sehingga dijadikan model terbaik untuk kasus ini.    
@@ -303,9 +307,9 @@ Visualisasi koefisien dan kepentingan fitur telah ditampilkan pada grafik sebelu
 
 Berikut adalah visualisasi fitur penting yang paling berpengaruh terhadap prediksi:   
 1. Feature Influence Logistic Regression
-![Grafik Feature Influence Logistic Regression Coefficients](images/output%2014.png "Feature Influence Logistic Regression Coefficients")   
-![Grafik Feature Importance Random Forest](images/output%2015.png "Feature Importance Random Forest")   
-![Grafik Feature Importance XGBoost](images/output%2016.png "Feature Importance XGBoost")   
+![output 14](https://github.com/user-attachments/assets/4ec92127-e967-4a88-9251-354a5ee73d4f)
+![output 15](https://github.com/user-attachments/assets/68febc4a-8a2b-4eb7-ac77-4f2de53b1c0d)
+![output 16](https://github.com/user-attachments/assets/fd688630-64b7-4b50-a95f-a6cf2600e7e0)
 
 ## Pengujian Model
 Sebagai langkah tambahan untuk menguji kemampuan model dalam situasi nyata, dilakukan pengujian terhadap data baru berupa dua contoh siswa dengan karakteristik berbeda. Model yang digunakan adalah Logistic Regression, yang sebelumnya telah dilatih pada data pelatihan (training data).   
