@@ -281,10 +281,10 @@ Berikut adalah hasil evaluasi dari empat model yang dibandingkan:
 
 | Model               | Accuracy | Precision | Recall | F1-score |
 |---------------------|----------|-----------|--------|----------|
-| Logistic Regression | 0.995    | 0.990     | 1.000  | 0.995    |
-| Random Forest       | 0.980    | 0.990     | 0.980  | 0.985    |
-| SVM                 | 0.865    | 0.960     | 0.990  | 0.974    |
-| XGBoost             | 0.980    | 0.990     | 0.980  | 0.985    |
+| Logistic Regression | 0.995    | 1.00      | 0.99   | 0.99     |
+| Random Forest       | 0.980    | 0.97      | 0.98   | 0.98     |
+| SVM                 | 0.965    | 0.97      | 0.95   | 0.96     |
+| XGBoost             | 0.980    | 0.97      | 0.98   | 0.98     |
 
 **Komparasi Model**   
 * Logistic Regression unggul dalam akurasi dan F1 Score, serta hanya membuat 1 kesalahan prediksi (False Negative).
